@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-header{
+.menu{
     background-color: #68C37C;
     color: white;
     display: flex;
