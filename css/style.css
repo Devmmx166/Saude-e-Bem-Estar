@@ -25,3 +25,10 @@ a {
     text-decoration: none;
     color: white;
 }
+footer{
+    background-color: #68C37C;
+    height: 25px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
