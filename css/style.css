@@ -4,5 +4,18 @@
     padding: 0;
 }
 header{
+    background-color: #68C37C;
+    color: white;
+    display: flex;
+    height: 50px;
+    padding: 8px;
     
+
+}
+ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 15px;
 }
