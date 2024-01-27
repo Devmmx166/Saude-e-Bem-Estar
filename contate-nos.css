@@ -1,0 +1,166 @@
+*{
+    font-family: 'Inter', 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background-color: #68C37C;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    height: 50px;
+    padding: 15px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+ul{
+    display: flex;
+     
+}
+nav ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+div{
+    color: #68C37C;
+    margin-top: 390px;
+    margin: 50;
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#servicos{
+    height: 590px;
+    background-color: #68C37C;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+  
+  header {
+    background-color: #68C37C; /* verde */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header h3 {
+    margin: 0;
+    color: white;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /*CONTATE-NOS*/
+  h1 {
+    color: #68C37C;
+    text-align: auto;
+    padding: 30px;
+    
+  }
+
+  /*Se tiver alguma...*/
+  p {
+    color: #68C37C;
+    padding-left: 40px;
+  }
+
+  a {
+    color: #68C37C;
+    text-decoration: none;
+  }
+  
+  form {
+    text-align: left;
+    padding: 20px;
+    padding-left: 40px;
+  }
+
+  form input {
+    margin-bottom: 10px; /* Adiciona espaço abaixo de cada campo */
+    padding: 15px; /* Ajusta o preenchimento interno dos campos */
+    width: 40%; /* Define a largura do campo como 100% para ocupar toda a largura do contêiner pai */
+    box-sizing: border-box; /* Garante que a largura e altura incluam a borda e o preenchimento */
+  }
+  
+  input,
+  button {
+    margin: 10px 0;
+    padding: 5px;
+    
+  }
+  
+  button {
+    background-color: #68C37C; /* verde */
+    color: white;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+  
+  button:hover {
+    background-color: #68C37C; /* verde mais escuro */
+  }
+
+  p {
+    color: #68C37C;
+  }
+
+  button {
+    border-radius: 25px; /* Raio para tornar o botão arredondado */
+    padding: 10px 150px; /* Adiciona preenchimento para tornar o botão mais longo */
+    /*padding-left: 100px; */
+    background-color: #68C37C; /* Verde */
+    color: #ffffff; /* Branco */
+    border: none; /* Remove a borda */
+    cursor: pointer;
+    font-size: 13px;
+    height: auto;
+  }
+  
+  button:hover {
+    background-color: #008000; /* Tom mais escuro de verde ao passar o mouse */
+  }
+
+
+  /*imagem relogio*/
+  .imagem-lateral { 
+    width: 700px;   
+    height: 700px; 
+    float: right; 
+    margin-left: 20px; /* Adiciona um espaçamento à esquerda da imagem */
+    margin-top: -230px;
+   
+
+  }
+
+  
+  footer {  
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  div {
+    
+    padding-left: 80px;
+    color: black;
+    margin-top: 0px;
+
+  }
+
+  
