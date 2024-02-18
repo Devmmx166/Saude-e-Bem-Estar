@@ -1,0 +1,63 @@
+*{
+    font-family: 'Inter', 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.menu{
+    background-color: #68C37C;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    height: 50px;
+    padding: 15px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+ul{
+    display: flex;
+     
+}
+nav ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.imagem-central{
+    width: auto;   
+    height: 860px;   
+ }
+
+    h1{
+        margin-top: -870px;
+        padding-left: 10px;
+        color: #68C37C;
+        font-size: 50px;
+        padding: auto;
+
+    }
+
+    .paragrafo1 {
+        padding-left: 25px;
+        font-size: 28px;
+        color: #68C37C;
+    }
+
+    .paragrafo2 {
+        font-size: 35px;
+        margin-top: 550px;
+        padding: 50px;
+        color: white;
+        background-color: #68C37C;
+
+
+    }
+
+    body {
+        background-color:#FFF9E9;      
+    }
