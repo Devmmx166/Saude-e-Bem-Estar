@@ -9,11 +9,12 @@ body{
     background-color: #68C37C;
 }
 #calc-container{
-  height: 450px;
+  height: 390px;
   display:flex;
   justify-content: center;
   background-color: #FFFFFF;
   padding: 10px;
+ padding-top: 40px;
 }
 
 #titulo-imc{
@@ -21,7 +22,9 @@ body{
   justify-content: center;
 color: white;
 font-size: 25px;
-padding-top:20px;
+padding-top:10px;
+padding-bottom: 10px;
+
 }
 
 #barra-menu{
@@ -146,7 +149,13 @@ article p{
  
   }
   footer{
-    padding: 15px;
+    padding: 5px;
     color: #FEFFFE;
+    text-align: center;
   }
-  
+nav{
+  padding-bottom: 0px;
+}
+ul{
+  margin-top: 10px;
+}
