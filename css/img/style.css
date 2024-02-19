@@ -1,0 +1,84 @@
+*{
+    font-family: 'Inter', 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background-color: #68C37C;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    height: 50px;
+    padding: 15px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+ul{
+    display: flex;
+     
+}
+nav ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.img_central{
+    background-image: url(../img/nossa_filosofia.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position-x: 500px;
+    background-position-y: -10px;
+    background-size: contain;
+    display: flex;
+}
+div{
+    color: #68C37C;
+    margin-top: 390px;
+    margin: 50;
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#servicos{
+    height: 400px;
+    background-color: #68C37C;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.p2{
+    padding-bottom: 30px;
+}
+footer{
+    background-color: #68C37C;
+    height: 25px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 20px 10px 0;
+    width: 200px;
+    background-color: #68C37C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover {
+    background-color: #478855;
+}
