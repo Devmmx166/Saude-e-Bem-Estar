@@ -1,0 +1,152 @@
+*{
+   
+    margin: 0;
+     /* border: 1px solid black; */
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #68C37C;
+}
+#calc-container{
+  height: 450px;
+  display:flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+#titulo-imc{
+  display: flex;
+  justify-content: center;
+color: white;
+font-size: 25px;
+padding-top:20px;
+}
+
+#barra-menu{
+    padding: 15px;
+    display: flex;
+   margin: auto;
+   justify-content: space-between;
+}
+
+#barra-menu h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FEFFFE;
+
+}
+
+ul li{
+    display: inline-block;
+    margin: 10px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #FEFFFE;
+    font-weight: bold;
+}
+
+main{
+   text-align: center;
+}
+figure{
+    display: inline-block;
+    position: relative; 
+}
+figure figcaption {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    font-size: 40px;
+   color: #68C37C;  
+   font-family: 'i';
+  }
+
+  #nossa-filosofia figcaption {
+bottom: 100px;
+
+justify-content:baseline;
+ font-weight: bold;
+   color: #367f46;
+   text-shadow: 2px 2px 2px rgba(160, 160, 160, 0.373);
+  font-size: 25px;
+  } #nossa-filosofia figcaption p {
+   color: #367f46;
+   font-weight: bolder;
+  padding-top: 20px;
+      }
+
+
+
+
+
+
+
+  figcaption{
+    text-align: left;
+    left: 50px;
+  }
+figcaption p{
+    position: absolute;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: #FEFFFE;
+    text-align:justify;
+    font-size: 20px;
+   width: 600px; 
+   
+   
+}
+figcaption h1{
+  
+ color: #68C37C;  
+ font-size: 40px;
+ margin-bottom: 30px;
+ 
+}
+article{
+    color: #FEFFFE;
+  
+    margin: 0 auto;
+    padding: 70px;
+   
+    border-bottom:1px solid #FEFFFE;
+    
+  
+}
+article h2{
+    font-weight: bold;
+   font-size: 30px;
+   padding: 25px;
+  
+}
+
+article p{
+    font-size: 18px;
+    padding: 30px;
+ }
+
+
+
+ .card-time{
+    padding-top: 20px;
+    border-bottom: none;
+ }
+ .card-time h2{
+   margin-bottom:40px;
+
+ }
+ .card-time img{
+    margin: 10px;
+ 
+  }
+  footer{
+    padding: 15px;
+    color: #FEFFFE;
+  }
+  
