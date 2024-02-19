@@ -47,7 +47,7 @@ h1{
 }
 
 #servicos{
-    height: 590px;
+    height: 400px;
     background-color: #68C37C;
     text-align: center;
     color: white;
@@ -63,7 +63,22 @@ h2{
 footer{
     background-color: #68C37C;
     height: 25px;
-    padding: 15px;
+    padding: 0px;
     text-align: center;
     color: white;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 20px 10px 0;
+    width: 200px;
+    background-color: #68C37C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+button:hover {
+    background-color: #478855;
 }
