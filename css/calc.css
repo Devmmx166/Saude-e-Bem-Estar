@@ -269,7 +269,7 @@ button{
 .info{
   display: flex;
   text-align: center;
-  margin: 5px;
+  margin: 3px;
   
   display: flex;
   flex-direction: column;
@@ -277,5 +277,6 @@ button{
   justify-content: center;
   align-items: center;
 }
+
 
 

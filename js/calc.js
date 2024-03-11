@@ -1,56 +1,83 @@
 let alturaInput = document.querySelector('input#altura')
 let pesoInput = document.getElementById('peso')
 let resultDiv = document.getElementById('result');
-let campoObrigadorio = document.querySelector(".required-popup")
+let campoObrigadorio = document.querySelector(".required-popup .required")
 
 
 let labelAltura = document.querySelector("#label-altura")
 let labelPeso = document.querySelector("#label-peso")
 let alturaHelper = document.getElementById("#altura-helper")
 let pesoHelper = document.getElementById("#peso-helper")
+let helperText = document.querySelector(".helper-text")
 
+function estilizarInputCorreto(input, helper){
+    helper.classList.remove("visible")
+    input.classList.remove("error")
+    input.classList.add("correct")
+}
+function estilizarInputIncorreto(input, helper){
+    helper.classList.add("visible")
+    input.classList.add("error")
+    input.classList.remove("correct")
+}
 
 
 //O "blur" serve para ao clicar ele seja chamado diferente do change que tem que digitar
 alturaInput.addEventListener("blur", (e) => {
     let valor = e.target.value;
+    
 
     if (valor === "") {
-        console.log('valor vazio')
+        valor.style.backgroundColor = "red"
     } else {
-        console.log("Valor de altura permitido: " + valor);
+        helperText.style.display="none" 
     }
 });
 
 //mostra campo obrigatorio
-function togglePopup(input, label) {
+function validarAlturaLabel(input, label) {
 
-    input.addEventListener("focus", () =>{
-        label.classList.add("required-popup")      
-        
+    input.addEventListener("focus", () =>{        
+        label.innerText = "* Campo obrigatorio" 
+        label.style.color="red"
+         
         
     });
   
 
     input.addEventListener("blur", () =>{
-        label.classList.remove("required-popup")
-        console.log("blur")
+        label.innerText="Altura (ex. 1.60) Altura (m)"
+        label.style.color="black" 
+        
+   
     });
 
 }
-togglePopup(alturaInput, labelAltura)
+
+function validarPesoLabel(input, label) {
+
+    input.addEventListener("focus", () =>{        
+        label.innerText = "* Campo obrigatorio" 
+        label.style.color="red"
+         
+        
+    });
+  
+
+    input.addEventListener("blur", () =>{
+        label.innerText="Peso (ex. 69.2) Peso (kg):"
+        label.style.color="black" 
+   
+    });
+
+}
+validarAlturaLabel(alturaInput, labelAltura)
+validarPesoLabel(pesoInput, labelPeso,)
 
 
 
 
 
-
-
-// function estilizarInputCorreto(input, helper){
-//     helper.classList.remove("visible")
-//     input.classList.remove("error")
-//     input.classList.add("correct")
-// }
 
 
 
