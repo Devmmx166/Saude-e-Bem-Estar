@@ -1,20 +1,22 @@
 *{
    
-    margin: 0;
+ 
      /* border: 1px solid black; */
      font-family: Arial, Helvetica, sans-serif;
+
+  
+    
 }
 
 body{
     background-color: #68C37C;
+    
 }
-#calc-container{
-  height: 390px;
+#calc-container{ 
   display:flex;
   justify-content: center;
   background-color: #FFFFFF;
-  padding: 10px;
- padding-top: 40px;
+
 }
 
 #titulo-imc{
@@ -22,13 +24,15 @@ body{
   justify-content: center;
 color: white;
 font-size: 25px;
-padding-top:10px;
-padding-bottom: 10px;
+padding-top:5px;
+padding-bottom: 5px;
+
 
 }
 
 #barra-menu{
-    padding: 15px;
+  height: 65px;
+    padding: 10px;
     display: flex;
    margin: auto;
    justify-content: space-between;
@@ -55,6 +59,7 @@ ul li a{
 
 main{
    text-align: center;
+   
 }
 figure{
     display: inline-block;
@@ -115,10 +120,10 @@ figcaption h1{
 article{
     color: #FEFFFE;
   
-    margin: 0 auto;
-    padding: 70px;
    
-    border-bottom:1px solid #FEFFFE;
+    
+   
+
     
   
 }
@@ -144,15 +149,133 @@ article p{
    margin-bottom:40px;
 
  }
- .card-time img{
-    margin: 10px;
- 
-  }
+
   footer{
-    padding: 5px;
+    height: 40px;
+    padding: 3px;
     color: #FEFFFE;
     text-align: center;
   }
-nav{
-  padding-bottom: 0px;
+
+
+#result{
+  background-color: hsl(19, 100%, 50%);
+  width: 200px;
+  padding: 5px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-weight: bold;
 }
+
+.info{
+  
+ width: 150px;
+  border-radius: 8px;
+  text-align: center;
+  
+ 
+
+}
+
+#limpar{
+  margin: 10px;
+  border-radius: 15px;
+  padding: 6px;
+  background-color: #FF5202;
+  color: white;
+  padding: 5 15px;
+  margin-bottom: 0;
+}
+#calcular{
+  margin: 10px;
+  border-radius: 15px;
+  padding: 6px;
+  background-color:#1F5EAF;
+  color: white;
+  margin-bottom: 0;
+}
+
+.botoes {
+width: 130px;
+border: none;
+}
+
+
+
+
+
+
+#texto-tabela{
+  font-weight: bold;
+  font-size: 11px;
+  background-color: #1F5EAF;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+ 
+}
+
+
+
+
+form{
+
+width: 1200px;
+
+
+}
+
+section#calc-container{
+height:430px;
+}
+#container-calc{
+  
+ font-size: 12px;
+  display:flex;
+  align-items: center;
+  text-align: center;
+ 
+  justify-content: center;
+ 
+}
+
+#container-calc div{
+ padding: 10px;
+margin:0 20px;
+  
+ }
+ #container-calc div input{
+  font-weight: bolder;
+
+font-size: 16px;
+   
+  }
+
+label{
+  display: block;
+
+}
+input{
+  display: block;
+ 
+
+}
+button{
+  display: block;
+ 
+}
+
+
+.info{
+  display: flex;
+  text-align: center;
+  margin: 5px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+
