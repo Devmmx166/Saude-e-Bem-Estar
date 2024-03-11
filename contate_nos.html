@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contate-nos</title>
-
   <link rel="stylesheet" href="contate-nos.css">
 </head>
 
@@ -30,17 +29,21 @@
      entre em contato conosco.</p>
 
 
-  <form action="">
+  <form id="form">
 
-    <input type="text" name="nome" id= "nome" placeholder="Nome" required>
+    <input type="text" name="nome" id= "nome" placeholder="Nome" class="inputs required" oninput="nameValidate()">
+    <span class="span-required"></span>
     <br>
-    <input type="text" name="Endereço de E-mail" id="Endereço de E-mail" placeholder="Endereço de Email" required>
+    <input type="text" name="Endereço de E-mail" id="email" placeholder="Endereço de Email" class="inputs required">
+    <span class="span-required"></span>
     <br>
-    <input type="text" name="Mensagem" id="Mensagem " placeholder="Mensagem" required>
+    <input type="text" name="Mensagem" id="mensagem" placeholder="Mensagem" class="inputs required">
+    <span class="span-required"></span>
+    
  
     <br>
 
-    <button type="submit">
+    <button type="submit" value="Enviar">
 
     Enviar
 
@@ -61,4 +64,65 @@
   </footer>
 
 </body>
+
+<script>
+  function nameValidate() {
+      var nomeInput = document.getElementById('nome');
+      var nome = nomeInput.value.trim();
+      if (nome === '') {
+          nomeInput.nextElementSibling.textContent = 'Nome é obrigatório';
+          nomeInput.nextElementSibling.classList.add('error-message');
+      } else {
+          nomeInput.nextElementSibling.textContent = '';
+          nomeInput.nextElementSibling.classList.remove('error-message');
+      }
+  }
+
+  function emailValidate() {
+      var emailInput = document.getElementById('email');
+      var email = emailInput.value.trim();
+      if (email === '' || !email.includes('@') || !email.includes('.com')) {
+          emailInput.nextElementSibling.textContent = 'Insira um e-mail válido';
+          emailInput.nextElementSibling.classList.add('error-message');
+      } else {
+          emailInput.nextElementSibling.textContent = '';
+          emailInput.nextElementSibling.classList.remove('error-message');
+      }
+  }
+
+  function messageValidate() {
+      var messageInput = document.getElementById('mensagem');
+      var message = messageInput.value.trim();
+      if (message.length < 10) {
+          messageInput.nextElementSibling.textContent = 'Mensagem curta demais';
+          messageInput.nextElementSibling.classList.add('error-message');
+      } else {
+          messageInput.nextElementSibling.textContent = '';
+          messageInput.nextElementSibling.classList.remove('error-message');
+      }
+  }
+
+  function formValidate(event) {
+        var nomeInput = document.getElementById('nome');
+        var emailInput = document.getElementById('email');
+        var messageInput = document.getElementById('mensagem');
+        var nome = nomeInput.value.trim();
+        var email = emailInput.value.trim();
+        var message = messageInput.value.trim();
+
+        // Verificar se há mensagens de erro
+        if (nome === '' || email === '' || !email.includes('@') || !email.includes('.com') || message.length < 10) {
+            event.preventDefault(); // Impede o envio do formulário
+            nameValidate(); // Executa todas as funções de validação para exibir as mensagens de erro
+            emailValidate();
+            messageValidate();
+        }
+    }
+
+  document.getElementById('nome').addEventListener('input', nameValidate);
+  document.getElementById('email').addEventListener('input', emailValidate);
+  document.getElementById('mensagem').addEventListener('input', messageValidate);
+  document.getElementById('form').addEventListener('submit', formValidate);
+</script>
+
 </html>
